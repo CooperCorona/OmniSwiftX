@@ -302,17 +302,17 @@ public class GLSPerlinNoiseSprite: GLSSprite, DoubleBuffered {
     
     ///Render noise to background texture (*buffer*).
     public func renderToTexture() {
-        /*
-        guard let success = self.framebufferStack?.pushGLSFramebuffer(self.buffer) where success else {
+        
+        /*guard let success = self.framebufferStack?.pushGLSFramebuffer(self.buffer) where success else {
             print("Error: Couldn't push framebuffer!")
             print("Stack: \(self.framebufferStack)")
             return
-        }
-         */
+        }*/
+ 
         glBindFramebuffer(GLenum(GL_FRAMEBUFFER), self.buffer.framebuffer)
         glBindRenderbuffer(GLenum(GL_RENDERBUFFER), self.buffer.renderBuffer)
         
-        glClearColor(0.0, 0.0, 1.0, 1.0)
+        glClearColor(0.0, 0.0, 0.0, 0.0)
         glClear(GLbitfield(GL_COLOR_BUFFER_BIT))
         
 //        glUseProgram(self.noiseProgram.program)

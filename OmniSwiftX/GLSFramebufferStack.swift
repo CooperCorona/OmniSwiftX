@@ -12,16 +12,25 @@ public class GLSFramebufferStack: NSObject {
    
     private let initialBuffer:NSOpenGLView?
     private var buffers:[GLuint] = []
+    public let internalContext:NSOpenGLContext?
     
     public init(initialBuffer:NSOpenGLView?) {
         
         self.initialBuffer = initialBuffer
-        
+        if let pixelFormat = self.initialBuffer?.pixelFormat {
+            self.internalContext = NSOpenGLContext(format: pixelFormat, shareContext: self.initialBuffer?.openGLContext)
+        } else {
+            self.internalContext = nil
+        }
         super.init()
     }//initialize
     
     
     public func pushFramebuffer(buffer:GLuint) -> Bool {
+        self.internalContext?.makeCurrentContext()
+        if let buffer = self.initialBuffer {
+            glViewport(0, 0, GLsizei(buffer.frame.width), GLsizei(buffer.frame.height))
+        }
         
         glBindFramebuffer(GLenum(GL_FRAMEBUFFER), buffer)
         self.buffers.append(buffer)
@@ -46,7 +55,7 @@ public class GLSFramebufferStack: NSObject {
         if let topBuffer = self.buffers.last {
             glBindFramebuffer(GLenum(topBuffer), topBuffer)
         } else {
-            //Bind the initial object
+            self.initialBuffer?.openGLContext?.makeCurrentContext()
         }
         
         return true
