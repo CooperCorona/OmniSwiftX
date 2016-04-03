@@ -7,13 +7,221 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DC34381C1CA78D78007EFEE8 /* OmniSwiftX.h in Headers */ = {isa = PBXBuildFile; fileRef = DC34381B1CA78D78007EFEE8 /* OmniSwiftX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC3438A51CA78E31007EFEE8 /* AngleDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438231CA78E31007EFEE8 /* AngleDelta.swift */; };
+		DC3438A61CA78E31007EFEE8 /* AnimationDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438241CA78E31007EFEE8 /* AnimationDelta.swift */; };
+		DC3438A71CA78E31007EFEE8 /* Array+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438251CA78E31007EFEE8 /* Array+Convenience.swift */; };
+		DC3438A91CA78E31007EFEE8 /* BilinearArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438271CA78E31007EFEE8 /* BilinearArray.swift */; };
+		DC3438AA1CA78E31007EFEE8 /* Bool+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438281CA78E31007EFEE8 /* Bool+Convenience.swift */; };
+		DC3438AB1CA78E31007EFEE8 /* BoolList.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438291CA78E31007EFEE8 /* BoolList.swift */; };
+		DC3438AC1CA78E31007EFEE8 /* BoolList2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34382A1CA78E31007EFEE8 /* BoolList2D.swift */; };
+		DC3438AF1CA78E31007EFEE8 /* CCSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34382D1CA78E31007EFEE8 /* CCSound.swift */; };
+		DC3438B01CA78E31007EFEE8 /* CCSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34382E1CA78E31007EFEE8 /* CCSoundPlayer.swift */; };
+		DC3438B11CA78E31007EFEE8 /* CCTexture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34382F1CA78E31007EFEE8 /* CCTexture.swift */; };
+		DC3438B21CA78E31007EFEE8 /* CCTextureOrganizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438301CA78E31007EFEE8 /* CCTextureOrganizer.swift */; };
+		DC3438B31CA78E31007EFEE8 /* CGFloat+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438311CA78E31007EFEE8 /* CGFloat+Convenience.swift */; };
+		DC3438B41CA78E31007EFEE8 /* CGPoint+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438321CA78E31007EFEE8 /* CGPoint+Math.swift */; };
+		DC3438B51CA78E31007EFEE8 /* CGRect+Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438331CA78E31007EFEE8 /* CGRect+Enumeration.swift */; };
+		DC3438B61CA78E31007EFEE8 /* CGRect+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438341CA78E31007EFEE8 /* CGRect+Math.swift */; };
+		DC3438B71CA78E31007EFEE8 /* CGSize+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438351CA78E31007EFEE8 /* CGSize+Math.swift */; };
+		DC3438B81CA78E31007EFEE8 /* ColorGradient1D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438361CA78E31007EFEE8 /* ColorGradient1D.swift */; };
+		DC3438BA1CA78E31007EFEE8 /* CombineIteration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438381CA78E31007EFEE8 /* CombineIteration.swift */; };
+		DC3438C31CA78E31007EFEE8 /* Direction2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438411CA78E31007EFEE8 /* Direction2D.swift */; };
+		DC3438C41CA78E31007EFEE8 /* FluctuatingNoise1D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438421CA78E31007EFEE8 /* FluctuatingNoise1D.swift */; };
+		DC3438C81CA78E31007EFEE8 /* GLAttributeBridger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438461CA78E31007EFEE8 /* GLAttributeBridger.swift */; };
+		DC3438CA1CA78E31007EFEE8 /* GLGradientTexture2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438481CA78E31007EFEE8 /* GLGradientTexture2D.swift */; };
+		DC3438CC1CA78E31007EFEE8 /* GLProgramDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34384A1CA78E31007EFEE8 /* GLProgramDictionary.swift */; };
+		DC3438CD1CA78E31007EFEE8 /* GLSAlphaHoleSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34384B1CA78E31007EFEE8 /* GLSAlphaHoleSprite.swift */; };
+		DC3438CE1CA78E31007EFEE8 /* GLSAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34384C1CA78E31007EFEE8 /* GLSAnimator.swift */; };
+		DC3438CF1CA78E31007EFEE8 /* GLSBlurSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34384D1CA78E31007EFEE8 /* GLSBlurSprite.swift */; };
+		DC3438D01CA78E31007EFEE8 /* GLSCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34384E1CA78E31007EFEE8 /* GLSCamera.swift */; };
+		DC3438D11CA78E31007EFEE8 /* GLSDoubleSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34384F1CA78E31007EFEE8 /* GLSDoubleSprite.swift */; };
+		DC3438D21CA78E31007EFEE8 /* GLSEmitterReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438501CA78E31007EFEE8 /* GLSEmitterReference.swift */; };
+		DC3438D31CA78E31007EFEE8 /* GLSFireSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438511CA78E31007EFEE8 /* GLSFireSprite.swift */; };
+		DC3438D41CA78E31007EFEE8 /* GLSFrameBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438521CA78E31007EFEE8 /* GLSFrameBuffer.swift */; };
+		DC3438D61CA78E31007EFEE8 /* GLSFramebufferStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438541CA78E31007EFEE8 /* GLSFramebufferStack.swift */; };
+		DC3438D71CA78E31007EFEE8 /* GLSFrameSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438551CA78E31007EFEE8 /* GLSFrameSprite.swift */; };
+		DC3438D81CA78E31007EFEE8 /* GLSGradientSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438561CA78E31007EFEE8 /* GLSGradientSprite.swift */; };
+		DC3438D91CA78E31007EFEE8 /* GLSGroupNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438571CA78E31007EFEE8 /* GLSGroupNode.swift */; };
+		DC3438DA1CA78E31007EFEE8 /* GLSNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438581CA78E31007EFEE8 /* GLSNode.swift */; };
+		DC3438DB1CA78E31007EFEE8 /* GLSNode+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438591CA78E31007EFEE8 /* GLSNode+Animation.swift */; };
+		DC3438DC1CA78E31007EFEE8 /* GLSNode+UniversalRendering.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34385A1CA78E31007EFEE8 /* GLSNode+UniversalRendering.swift */; };
+		DC3438DD1CA78E31007EFEE8 /* GLSNodeReference.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34385B1CA78E31007EFEE8 /* GLSNodeReference.swift */; };
+		DC3438DE1CA78E31007EFEE8 /* GLSNoiseSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34385C1CA78E31007EFEE8 /* GLSNoiseSprite.swift */; };
+		DC3438DF1CA78E31007EFEE8 /* GLSParticleEmitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34385D1CA78E31007EFEE8 /* GLSParticleEmitter.swift */; };
+		DC3438E01CA78E31007EFEE8 /* GLSPerlinNoiseSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34385E1CA78E31007EFEE8 /* GLSPerlinNoiseSprite.swift */; };
+		DC3438E11CA78E31007EFEE8 /* GLSRadialGradientSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34385F1CA78E31007EFEE8 /* GLSRadialGradientSprite.swift */; };
+		DC3438E21CA78E31007EFEE8 /* GLSRecursivePropertyNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438601CA78E31007EFEE8 /* GLSRecursivePropertyNode.swift */; };
+		DC3438E31CA78E31007EFEE8 /* GLSRepeatedNoiseSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438611CA78E31007EFEE8 /* GLSRepeatedNoiseSprite.swift */; };
+		DC3438E41CA78E31007EFEE8 /* GLSSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438621CA78E31007EFEE8 /* GLSSprite.swift */; };
+		DC3438E51CA78E31007EFEE8 /* GLSTileSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438631CA78E31007EFEE8 /* GLSTileSprite.swift */; };
+		DC3438E81CA78E31007EFEE8 /* GLSUniversalTextureWrangler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438661CA78E31007EFEE8 /* GLSUniversalTextureWrangler.swift */; };
+		DC3438E91CA78E31007EFEE8 /* HasComponentsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438671CA78E31007EFEE8 /* HasComponentsProtocol.swift */; };
+		DC3438EA1CA78E31007EFEE8 /* HealthBarSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438681CA78E31007EFEE8 /* HealthBarSprite.swift */; };
+		DC3438EC1CA78E31007EFEE8 /* Int+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34386A1CA78E31007EFEE8 /* Int+Convenience.swift */; };
+		DC3438ED1CA78E31007EFEE8 /* IntPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34386B1CA78E31007EFEE8 /* IntPoint.swift */; };
+		DC3438EE1CA78E31007EFEE8 /* IntPoint+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34386C1CA78E31007EFEE8 /* IntPoint+Operations.swift */; };
+		DC3438F01CA78E31007EFEE8 /* LinearArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34386E1CA78E31007EFEE8 /* LinearArray.swift */; };
+		DC3438F11CA78E31007EFEE8 /* LinearInterpolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34386F1CA78E31007EFEE8 /* LinearInterpolation.swift */; };
+		DC3438F21CA78E31007EFEE8 /* MultiTexturedQuad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438701CA78E31007EFEE8 /* MultiTexturedQuad.swift */; };
+		DC3438F31CA78E31007EFEE8 /* NoiseArray1D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438711CA78E31007EFEE8 /* NoiseArray1D.swift */; };
+		DC3438F41CA78E31007EFEE8 /* NoiseArray2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438721CA78E31007EFEE8 /* NoiseArray2D.swift */; };
+		DC3438F51CA78E31007EFEE8 /* NoiseArray3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438731CA78E31007EFEE8 /* NoiseArray3D.swift */; };
+		DC3438F61CA78E31007EFEE8 /* NoiseFadeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438741CA78E31007EFEE8 /* NoiseFadeAnimation.swift */; };
+		DC3438F71CA78E31007EFEE8 /* NoiseTexture2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438751CA78E31007EFEE8 /* NoiseTexture2D.swift */; };
+		DC3438F81CA78E31007EFEE8 /* NSFileManager+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438761CA78E31007EFEE8 /* NSFileManager+Convenience.swift */; };
+		DC3438F91CA78E31007EFEE8 /* NSNotificationCenter+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438771CA78E31007EFEE8 /* NSNotificationCenter+Convenience.swift */; };
+		DC3438FA1CA78E31007EFEE8 /* NSObject+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438781CA78E31007EFEE8 /* NSObject+Convenience.swift */; };
+		DC3438FB1CA78E31007EFEE8 /* NSOperation+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438791CA78E31007EFEE8 /* NSOperation+Convenience.swift */; };
+		DC3438FC1CA78E31007EFEE8 /* NSScanner+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34387A1CA78E31007EFEE8 /* NSScanner+Swift.swift */; };
+		DC3438FD1CA78E31007EFEE8 /* NSURL+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34387B1CA78E31007EFEE8 /* NSURL+Convenience.swift */; };
+		DC3438FE1CA78E31007EFEE8 /* ParticleEmitterBackgroundQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34387C1CA78E31007EFEE8 /* ParticleEmitterBackgroundQueue.swift */; };
+		DC3439001CA78E31007EFEE8 /* Primitives+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34387E1CA78E31007EFEE8 /* Primitives+Convenience.swift */; };
+		DC3439011CA78E31007EFEE8 /* RecursiveRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34387F1CA78E31007EFEE8 /* RecursiveRenderer.swift */; };
+		DC3439021CA78E31007EFEE8 /* RotationDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438801CA78E31007EFEE8 /* RotationDelta.swift */; };
+		DC3439041CA78E31007EFEE8 /* SCCloudSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438821CA78E31007EFEE8 /* SCCloudSingleton.swift */; };
+		DC3439051CA78E31007EFEE8 /* SCCloudSingleton+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438831CA78E31007EFEE8 /* SCCloudSingleton+Convenience.swift */; };
+		DC3439061CA78E31007EFEE8 /* SCMatrix3Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438841CA78E31007EFEE8 /* SCMatrix3Array.swift */; };
+		DC3439071CA78E31007EFEE8 /* SCMatrix4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438851CA78E31007EFEE8 /* SCMatrix4.swift */; };
+		DC3439081CA78E31007EFEE8 /* SCMatrix4+Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438861CA78E31007EFEE8 /* SCMatrix4+Transformation.swift */; };
+		DC3439091CA78E31007EFEE8 /* SCMatrix4Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438871CA78E31007EFEE8 /* SCMatrix4Array.swift */; };
+		DC34390A1CA78E31007EFEE8 /* SCVector3.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438881CA78E31007EFEE8 /* SCVector3.swift */; };
+		DC34390B1CA78E31007EFEE8 /* SCVector3+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438891CA78E31007EFEE8 /* SCVector3+Color.swift */; };
+		DC34390C1CA78E31007EFEE8 /* SCVector3Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34388A1CA78E31007EFEE8 /* SCVector3Array.swift */; };
+		DC34390D1CA78E31007EFEE8 /* SCVector4.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34388B1CA78E31007EFEE8 /* SCVector4.swift */; };
+		DC34390E1CA78E31007EFEE8 /* SCVector4+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34388C1CA78E31007EFEE8 /* SCVector4+Color.swift */; };
+		DC34390F1CA78E31007EFEE8 /* Set+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34388D1CA78E31007EFEE8 /* Set+Convenience.swift */; };
+		DC3439101CA78E31007EFEE8 /* ShaderHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34388E1CA78E31007EFEE8 /* ShaderHelper.swift */; };
+		DC3439111CA78E31007EFEE8 /* SimpleStringParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC34388F1CA78E31007EFEE8 /* SimpleStringParser.swift */; };
+		DC3439121CA78E31007EFEE8 /* SmoothingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438901CA78E31007EFEE8 /* SmoothingFunctions.swift */; };
+		DC3439131CA78E31007EFEE8 /* Stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438911CA78E31007EFEE8 /* Stack.swift */; };
+		DC3439141CA78E31007EFEE8 /* StaticRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438921CA78E31007EFEE8 /* StaticRenderer.swift */; };
+		DC3439151CA78E31007EFEE8 /* String+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438931CA78E31007EFEE8 /* String+Convenience.swift */; };
+		DC3439161CA78E31007EFEE8 /* TexturedQuad.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438941CA78E31007EFEE8 /* TexturedQuad.swift */; };
+		DC3439171CA78E31007EFEE8 /* TimeTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438951CA78E31007EFEE8 /* TimeTracker.swift */; };
+		DC3439191CA78E31007EFEE8 /* TrilinearArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438971CA78E31007EFEE8 /* TrilinearArray.swift */; };
+		DC3439231CA78E31007EFEE8 /* UniversalSaverBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438A11CA78E31007EFEE8 /* UniversalSaverBase.swift */; };
+		DC3439241CA78E31007EFEE8 /* Updater.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438A21CA78E31007EFEE8 /* Updater.swift */; };
+		DC3439261CA78E31007EFEE8 /* XMLFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC3438A41CA78E31007EFEE8 /* XMLFileHandler.swift */; };
+		DC5C9A811CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A791CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.fsh */; };
+		DC5C9A821CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A7A1CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.vsh */; };
+		DC5C9A831CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A7B1CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.fsh */; };
+		DC5C9A841CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A7C1CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.vsh */; };
+		DC5C9A851CAC1BB1002AAAF8 /* PerlinNoiseShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A7D1CAC1BB1002AAAF8 /* PerlinNoiseShader.fsh */; };
+		DC5C9A861CAC1BB1002AAAF8 /* PerlinNoiseShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A7E1CAC1BB1002AAAF8 /* PerlinNoiseShader.vsh */; };
+		DC5C9A871CAC1BB1002AAAF8 /* PerlinSinNoiseShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A7F1CAC1BB1002AAAF8 /* PerlinSinNoiseShader.fsh */; };
+		DC5C9A881CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A801CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh */; };
+		DC8A94661CA977AC00049118 /* NSRegularExpression+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A94651CA977AC00049118 /* NSRegularExpression+Convenience.swift */; };
+		DC8A94681CA9787C00049118 /* String+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A94671CA9787C00049118 /* String+Parsing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DC3438181CA78D78007EFEE8 /* OmniSwiftX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OmniSwiftX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC34381B1CA78D78007EFEE8 /* OmniSwiftX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OmniSwiftX.h; sourceTree = "<group>"; };
 		DC34381D1CA78D78007EFEE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC3438231CA78E31007EFEE8 /* AngleDelta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AngleDelta.swift; sourceTree = "<group>"; };
+		DC3438241CA78E31007EFEE8 /* AnimationDelta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationDelta.swift; sourceTree = "<group>"; };
+		DC3438251CA78E31007EFEE8 /* Array+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438271CA78E31007EFEE8 /* BilinearArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BilinearArray.swift; sourceTree = "<group>"; };
+		DC3438281CA78E31007EFEE8 /* Bool+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bool+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438291CA78E31007EFEE8 /* BoolList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolList.swift; sourceTree = "<group>"; };
+		DC34382A1CA78E31007EFEE8 /* BoolList2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoolList2D.swift; sourceTree = "<group>"; };
+		DC34382D1CA78E31007EFEE8 /* CCSound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSound.swift; sourceTree = "<group>"; };
+		DC34382E1CA78E31007EFEE8 /* CCSoundPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCSoundPlayer.swift; sourceTree = "<group>"; };
+		DC34382F1CA78E31007EFEE8 /* CCTexture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCTexture.swift; sourceTree = "<group>"; };
+		DC3438301CA78E31007EFEE8 /* CCTextureOrganizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCTextureOrganizer.swift; sourceTree = "<group>"; };
+		DC3438311CA78E31007EFEE8 /* CGFloat+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGFloat+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438321CA78E31007EFEE8 /* CGPoint+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGPoint+Math.swift"; sourceTree = "<group>"; };
+		DC3438331CA78E31007EFEE8 /* CGRect+Enumeration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Enumeration.swift"; sourceTree = "<group>"; };
+		DC3438341CA78E31007EFEE8 /* CGRect+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Math.swift"; sourceTree = "<group>"; };
+		DC3438351CA78E31007EFEE8 /* CGSize+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGSize+Math.swift"; sourceTree = "<group>"; };
+		DC3438361CA78E31007EFEE8 /* ColorGradient1D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorGradient1D.swift; sourceTree = "<group>"; };
+		DC3438381CA78E31007EFEE8 /* CombineIteration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CombineIteration.swift; sourceTree = "<group>"; };
+		DC3438411CA78E31007EFEE8 /* Direction2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction2D.swift; sourceTree = "<group>"; };
+		DC3438421CA78E31007EFEE8 /* FluctuatingNoise1D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FluctuatingNoise1D.swift; sourceTree = "<group>"; };
+		DC3438461CA78E31007EFEE8 /* GLAttributeBridger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLAttributeBridger.swift; sourceTree = "<group>"; };
+		DC3438481CA78E31007EFEE8 /* GLGradientTexture2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLGradientTexture2D.swift; sourceTree = "<group>"; };
+		DC34384A1CA78E31007EFEE8 /* GLProgramDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLProgramDictionary.swift; sourceTree = "<group>"; };
+		DC34384B1CA78E31007EFEE8 /* GLSAlphaHoleSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSAlphaHoleSprite.swift; sourceTree = "<group>"; };
+		DC34384C1CA78E31007EFEE8 /* GLSAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSAnimator.swift; sourceTree = "<group>"; };
+		DC34384D1CA78E31007EFEE8 /* GLSBlurSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSBlurSprite.swift; sourceTree = "<group>"; };
+		DC34384E1CA78E31007EFEE8 /* GLSCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSCamera.swift; sourceTree = "<group>"; };
+		DC34384F1CA78E31007EFEE8 /* GLSDoubleSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSDoubleSprite.swift; sourceTree = "<group>"; };
+		DC3438501CA78E31007EFEE8 /* GLSEmitterReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSEmitterReference.swift; sourceTree = "<group>"; };
+		DC3438511CA78E31007EFEE8 /* GLSFireSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSFireSprite.swift; sourceTree = "<group>"; };
+		DC3438521CA78E31007EFEE8 /* GLSFrameBuffer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSFrameBuffer.swift; sourceTree = "<group>"; };
+		DC3438541CA78E31007EFEE8 /* GLSFramebufferStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSFramebufferStack.swift; sourceTree = "<group>"; };
+		DC3438551CA78E31007EFEE8 /* GLSFrameSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSFrameSprite.swift; sourceTree = "<group>"; };
+		DC3438561CA78E31007EFEE8 /* GLSGradientSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSGradientSprite.swift; sourceTree = "<group>"; };
+		DC3438571CA78E31007EFEE8 /* GLSGroupNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSGroupNode.swift; sourceTree = "<group>"; };
+		DC3438581CA78E31007EFEE8 /* GLSNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSNode.swift; sourceTree = "<group>"; };
+		DC3438591CA78E31007EFEE8 /* GLSNode+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLSNode+Animation.swift"; sourceTree = "<group>"; };
+		DC34385A1CA78E31007EFEE8 /* GLSNode+UniversalRendering.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GLSNode+UniversalRendering.swift"; sourceTree = "<group>"; };
+		DC34385B1CA78E31007EFEE8 /* GLSNodeReference.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSNodeReference.swift; sourceTree = "<group>"; };
+		DC34385C1CA78E31007EFEE8 /* GLSNoiseSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSNoiseSprite.swift; sourceTree = "<group>"; };
+		DC34385D1CA78E31007EFEE8 /* GLSParticleEmitter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSParticleEmitter.swift; sourceTree = "<group>"; };
+		DC34385E1CA78E31007EFEE8 /* GLSPerlinNoiseSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSPerlinNoiseSprite.swift; sourceTree = "<group>"; };
+		DC34385F1CA78E31007EFEE8 /* GLSRadialGradientSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSRadialGradientSprite.swift; sourceTree = "<group>"; };
+		DC3438601CA78E31007EFEE8 /* GLSRecursivePropertyNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSRecursivePropertyNode.swift; sourceTree = "<group>"; };
+		DC3438611CA78E31007EFEE8 /* GLSRepeatedNoiseSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSRepeatedNoiseSprite.swift; sourceTree = "<group>"; };
+		DC3438621CA78E31007EFEE8 /* GLSSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSSprite.swift; sourceTree = "<group>"; };
+		DC3438631CA78E31007EFEE8 /* GLSTileSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSTileSprite.swift; sourceTree = "<group>"; };
+		DC3438661CA78E31007EFEE8 /* GLSUniversalTextureWrangler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GLSUniversalTextureWrangler.swift; sourceTree = "<group>"; };
+		DC3438671CA78E31007EFEE8 /* HasComponentsProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasComponentsProtocol.swift; sourceTree = "<group>"; };
+		DC3438681CA78E31007EFEE8 /* HealthBarSprite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthBarSprite.swift; sourceTree = "<group>"; };
+		DC34386A1CA78E31007EFEE8 /* Int+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Convenience.swift"; sourceTree = "<group>"; };
+		DC34386B1CA78E31007EFEE8 /* IntPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntPoint.swift; sourceTree = "<group>"; };
+		DC34386C1CA78E31007EFEE8 /* IntPoint+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IntPoint+Operations.swift"; sourceTree = "<group>"; };
+		DC34386E1CA78E31007EFEE8 /* LinearArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearArray.swift; sourceTree = "<group>"; };
+		DC34386F1CA78E31007EFEE8 /* LinearInterpolation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearInterpolation.swift; sourceTree = "<group>"; };
+		DC3438701CA78E31007EFEE8 /* MultiTexturedQuad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiTexturedQuad.swift; sourceTree = "<group>"; };
+		DC3438711CA78E31007EFEE8 /* NoiseArray1D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseArray1D.swift; sourceTree = "<group>"; };
+		DC3438721CA78E31007EFEE8 /* NoiseArray2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseArray2D.swift; sourceTree = "<group>"; };
+		DC3438731CA78E31007EFEE8 /* NoiseArray3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseArray3D.swift; sourceTree = "<group>"; };
+		DC3438741CA78E31007EFEE8 /* NoiseFadeAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseFadeAnimation.swift; sourceTree = "<group>"; };
+		DC3438751CA78E31007EFEE8 /* NoiseTexture2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoiseTexture2D.swift; sourceTree = "<group>"; };
+		DC3438761CA78E31007EFEE8 /* NSFileManager+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSFileManager+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438771CA78E31007EFEE8 /* NSNotificationCenter+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSNotificationCenter+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438781CA78E31007EFEE8 /* NSObject+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438791CA78E31007EFEE8 /* NSOperation+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperation+Convenience.swift"; sourceTree = "<group>"; };
+		DC34387A1CA78E31007EFEE8 /* NSScanner+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSScanner+Swift.swift"; sourceTree = "<group>"; };
+		DC34387B1CA78E31007EFEE8 /* NSURL+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+Convenience.swift"; sourceTree = "<group>"; };
+		DC34387C1CA78E31007EFEE8 /* ParticleEmitterBackgroundQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticleEmitterBackgroundQueue.swift; sourceTree = "<group>"; };
+		DC34387E1CA78E31007EFEE8 /* Primitives+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Primitives+Convenience.swift"; sourceTree = "<group>"; };
+		DC34387F1CA78E31007EFEE8 /* RecursiveRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecursiveRenderer.swift; sourceTree = "<group>"; };
+		DC3438801CA78E31007EFEE8 /* RotationDelta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotationDelta.swift; sourceTree = "<group>"; };
+		DC3438821CA78E31007EFEE8 /* SCCloudSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCloudSingleton.swift; sourceTree = "<group>"; };
+		DC3438831CA78E31007EFEE8 /* SCCloudSingleton+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCCloudSingleton+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438841CA78E31007EFEE8 /* SCMatrix3Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMatrix3Array.swift; sourceTree = "<group>"; };
+		DC3438851CA78E31007EFEE8 /* SCMatrix4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMatrix4.swift; sourceTree = "<group>"; };
+		DC3438861CA78E31007EFEE8 /* SCMatrix4+Transformation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCMatrix4+Transformation.swift"; sourceTree = "<group>"; };
+		DC3438871CA78E31007EFEE8 /* SCMatrix4Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMatrix4Array.swift; sourceTree = "<group>"; };
+		DC3438881CA78E31007EFEE8 /* SCVector3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCVector3.swift; sourceTree = "<group>"; };
+		DC3438891CA78E31007EFEE8 /* SCVector3+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCVector3+Color.swift"; sourceTree = "<group>"; };
+		DC34388A1CA78E31007EFEE8 /* SCVector3Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCVector3Array.swift; sourceTree = "<group>"; };
+		DC34388B1CA78E31007EFEE8 /* SCVector4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCVector4.swift; sourceTree = "<group>"; };
+		DC34388C1CA78E31007EFEE8 /* SCVector4+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SCVector4+Color.swift"; sourceTree = "<group>"; };
+		DC34388D1CA78E31007EFEE8 /* Set+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Set+Convenience.swift"; sourceTree = "<group>"; };
+		DC34388E1CA78E31007EFEE8 /* ShaderHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShaderHelper.swift; sourceTree = "<group>"; };
+		DC34388F1CA78E31007EFEE8 /* SimpleStringParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleStringParser.swift; sourceTree = "<group>"; };
+		DC3438901CA78E31007EFEE8 /* SmoothingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmoothingFunctions.swift; sourceTree = "<group>"; };
+		DC3438911CA78E31007EFEE8 /* Stack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		DC3438921CA78E31007EFEE8 /* StaticRenderer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticRenderer.swift; sourceTree = "<group>"; };
+		DC3438931CA78E31007EFEE8 /* String+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Convenience.swift"; sourceTree = "<group>"; };
+		DC3438941CA78E31007EFEE8 /* TexturedQuad.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TexturedQuad.swift; sourceTree = "<group>"; };
+		DC3438951CA78E31007EFEE8 /* TimeTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeTracker.swift; sourceTree = "<group>"; };
+		DC3438971CA78E31007EFEE8 /* TrilinearArray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrilinearArray.swift; sourceTree = "<group>"; };
+		DC3438A11CA78E31007EFEE8 /* UniversalSaverBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UniversalSaverBase.swift; sourceTree = "<group>"; };
+		DC3438A21CA78E31007EFEE8 /* Updater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updater.swift; sourceTree = "<group>"; };
+		DC3438A41CA78E31007EFEE8 /* XMLFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLFileHandler.swift; sourceTree = "<group>"; };
+		DC5C9A791CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinAbsNoiseShader.fsh; sourceTree = "<group>"; };
+		DC5C9A7A1CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinAbsNoiseShader.vsh; sourceTree = "<group>"; };
+		DC5C9A7B1CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinFractalNoiseShader.fsh; sourceTree = "<group>"; };
+		DC5C9A7C1CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinFractalNoiseShader.vsh; sourceTree = "<group>"; };
+		DC5C9A7D1CAC1BB1002AAAF8 /* PerlinNoiseShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinNoiseShader.fsh; sourceTree = "<group>"; };
+		DC5C9A7E1CAC1BB1002AAAF8 /* PerlinNoiseShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinNoiseShader.vsh; sourceTree = "<group>"; };
+		DC5C9A7F1CAC1BB1002AAAF8 /* PerlinSinNoiseShader.fsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinSinNoiseShader.fsh; sourceTree = "<group>"; };
+		DC5C9A801CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinSinNoiseShader.vsh; sourceTree = "<group>"; };
+		DC8A94651CA977AC00049118 /* NSRegularExpression+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Convenience.swift"; sourceTree = "<group>"; };
+		DC8A94671CA9787C00049118 /* String+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Parsing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +254,162 @@
 		DC34381A1CA78D78007EFEE8 /* OmniSwiftX */ = {
 			isa = PBXGroup;
 			children = (
-				DC34381B1CA78D78007EFEE8 /* OmniSwiftX.h */,
+				DC3438241CA78E31007EFEE8 /* AnimationDelta.swift */,
+				DC3438291CA78E31007EFEE8 /* BoolList.swift */,
+				DC34382A1CA78E31007EFEE8 /* BoolList2D.swift */,
+				DC34382D1CA78E31007EFEE8 /* CCSound.swift */,
+				DC34382E1CA78E31007EFEE8 /* CCSoundPlayer.swift */,
+				DC3439271CA78E38007EFEE8 /* Convenience */,
+				DC3438411CA78E31007EFEE8 /* Direction2D.swift */,
+				DC3438671CA78E31007EFEE8 /* HasComponentsProtocol.swift */,
+				DC34386B1CA78E31007EFEE8 /* IntPoint.swift */,
+				DC34386C1CA78E31007EFEE8 /* IntPoint+Operations.swift */,
+				DC3439281CA78E9B007EFEE8 /* GLSNode */,
+				DC3439291CA78E9F007EFEE8 /* GL Helpers */,
+				DC34392B1CA78F24007EFEE8 /* Noise */,
+				DC34392A1CA78F15007EFEE8 /* SC Math */,
+				DC3438821CA78E31007EFEE8 /* SCCloudSingleton.swift */,
+				DC34388F1CA78E31007EFEE8 /* SimpleStringParser.swift */,
+				DCC9B6A61CA83D9200743E2C /* Shaders */,
+				DC3438911CA78E31007EFEE8 /* Stack.swift */,
+				DC3438951CA78E31007EFEE8 /* TimeTracker.swift */,
+				DC3438A11CA78E31007EFEE8 /* UniversalSaverBase.swift */,
+				DC3438A21CA78E31007EFEE8 /* Updater.swift */,
+				DC3438A41CA78E31007EFEE8 /* XMLFileHandler.swift */,
 				DC34381D1CA78D78007EFEE8 /* Info.plist */,
 			);
 			path = OmniSwiftX;
+			sourceTree = "<group>";
+		};
+		DC3439271CA78E38007EFEE8 /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				DC3438231CA78E31007EFEE8 /* AngleDelta.swift */,
+				DC3438251CA78E31007EFEE8 /* Array+Convenience.swift */,
+				DC3438281CA78E31007EFEE8 /* Bool+Convenience.swift */,
+				DC3438311CA78E31007EFEE8 /* CGFloat+Convenience.swift */,
+				DC3438321CA78E31007EFEE8 /* CGPoint+Math.swift */,
+				DC3438331CA78E31007EFEE8 /* CGRect+Enumeration.swift */,
+				DC3438341CA78E31007EFEE8 /* CGRect+Math.swift */,
+				DC3438351CA78E31007EFEE8 /* CGSize+Math.swift */,
+				DC3438381CA78E31007EFEE8 /* CombineIteration.swift */,
+				DC34386A1CA78E31007EFEE8 /* Int+Convenience.swift */,
+				DC3438761CA78E31007EFEE8 /* NSFileManager+Convenience.swift */,
+				DC3438771CA78E31007EFEE8 /* NSNotificationCenter+Convenience.swift */,
+				DC3438781CA78E31007EFEE8 /* NSObject+Convenience.swift */,
+				DC3438791CA78E31007EFEE8 /* NSOperation+Convenience.swift */,
+				DC8A94651CA977AC00049118 /* NSRegularExpression+Convenience.swift */,
+				DC34387A1CA78E31007EFEE8 /* NSScanner+Swift.swift */,
+				DC34387B1CA78E31007EFEE8 /* NSURL+Convenience.swift */,
+				DC34387E1CA78E31007EFEE8 /* Primitives+Convenience.swift */,
+				DC3438801CA78E31007EFEE8 /* RotationDelta.swift */,
+				DC3438831CA78E31007EFEE8 /* SCCloudSingleton+Convenience.swift */,
+				DC34388D1CA78E31007EFEE8 /* Set+Convenience.swift */,
+				DC3438931CA78E31007EFEE8 /* String+Convenience.swift */,
+				DC8A94671CA9787C00049118 /* String+Parsing.swift */,
+			);
+			name = Convenience;
+			sourceTree = "<group>";
+		};
+		DC3439281CA78E9B007EFEE8 /* GLSNode */ = {
+			isa = PBXGroup;
+			children = (
+				DC34384B1CA78E31007EFEE8 /* GLSAlphaHoleSprite.swift */,
+				DC34384D1CA78E31007EFEE8 /* GLSBlurSprite.swift */,
+				DC34384F1CA78E31007EFEE8 /* GLSDoubleSprite.swift */,
+				DC3438511CA78E31007EFEE8 /* GLSFireSprite.swift */,
+				DC3438521CA78E31007EFEE8 /* GLSFrameBuffer.swift */,
+				DC3438551CA78E31007EFEE8 /* GLSFrameSprite.swift */,
+				DC3438561CA78E31007EFEE8 /* GLSGradientSprite.swift */,
+				DC3438571CA78E31007EFEE8 /* GLSGroupNode.swift */,
+				DC3438581CA78E31007EFEE8 /* GLSNode.swift */,
+				DC34385C1CA78E31007EFEE8 /* GLSNoiseSprite.swift */,
+				DC34385D1CA78E31007EFEE8 /* GLSParticleEmitter.swift */,
+				DC34385E1CA78E31007EFEE8 /* GLSPerlinNoiseSprite.swift */,
+				DC34385F1CA78E31007EFEE8 /* GLSRadialGradientSprite.swift */,
+				DC3438601CA78E31007EFEE8 /* GLSRecursivePropertyNode.swift */,
+				DC3438611CA78E31007EFEE8 /* GLSRepeatedNoiseSprite.swift */,
+				DC3438621CA78E31007EFEE8 /* GLSSprite.swift */,
+				DC3438631CA78E31007EFEE8 /* GLSTileSprite.swift */,
+			);
+			name = GLSNode;
+			sourceTree = "<group>";
+		};
+		DC3439291CA78E9F007EFEE8 /* GL Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DC34382F1CA78E31007EFEE8 /* CCTexture.swift */,
+				DC3438301CA78E31007EFEE8 /* CCTextureOrganizer.swift */,
+				DC3438361CA78E31007EFEE8 /* ColorGradient1D.swift */,
+				DC3438461CA78E31007EFEE8 /* GLAttributeBridger.swift */,
+				DC3438481CA78E31007EFEE8 /* GLGradientTexture2D.swift */,
+				DC34384A1CA78E31007EFEE8 /* GLProgramDictionary.swift */,
+				DC34384C1CA78E31007EFEE8 /* GLSAnimator.swift */,
+				DC34384E1CA78E31007EFEE8 /* GLSCamera.swift */,
+				DC3438501CA78E31007EFEE8 /* GLSEmitterReference.swift */,
+				DC3438541CA78E31007EFEE8 /* GLSFramebufferStack.swift */,
+				DC3438591CA78E31007EFEE8 /* GLSNode+Animation.swift */,
+				DC34385A1CA78E31007EFEE8 /* GLSNode+UniversalRendering.swift */,
+				DC34385B1CA78E31007EFEE8 /* GLSNodeReference.swift */,
+				DC3438661CA78E31007EFEE8 /* GLSUniversalTextureWrangler.swift */,
+				DC3438681CA78E31007EFEE8 /* HealthBarSprite.swift */,
+				DC3438701CA78E31007EFEE8 /* MultiTexturedQuad.swift */,
+				DC34387C1CA78E31007EFEE8 /* ParticleEmitterBackgroundQueue.swift */,
+				DC34387F1CA78E31007EFEE8 /* RecursiveRenderer.swift */,
+				DC34388E1CA78E31007EFEE8 /* ShaderHelper.swift */,
+				DC3438921CA78E31007EFEE8 /* StaticRenderer.swift */,
+				DC3438941CA78E31007EFEE8 /* TexturedQuad.swift */,
+			);
+			name = "GL Helpers";
+			sourceTree = "<group>";
+		};
+		DC34392A1CA78F15007EFEE8 /* SC Math */ = {
+			isa = PBXGroup;
+			children = (
+				DC3438841CA78E31007EFEE8 /* SCMatrix3Array.swift */,
+				DC3438851CA78E31007EFEE8 /* SCMatrix4.swift */,
+				DC3438861CA78E31007EFEE8 /* SCMatrix4+Transformation.swift */,
+				DC3438871CA78E31007EFEE8 /* SCMatrix4Array.swift */,
+				DC3438881CA78E31007EFEE8 /* SCVector3.swift */,
+				DC3438891CA78E31007EFEE8 /* SCVector3+Color.swift */,
+				DC34388A1CA78E31007EFEE8 /* SCVector3Array.swift */,
+				DC34388B1CA78E31007EFEE8 /* SCVector4.swift */,
+				DC34388C1CA78E31007EFEE8 /* SCVector4+Color.swift */,
+				DC3438901CA78E31007EFEE8 /* SmoothingFunctions.swift */,
+			);
+			name = "SC Math";
+			sourceTree = "<group>";
+		};
+		DC34392B1CA78F24007EFEE8 /* Noise */ = {
+			isa = PBXGroup;
+			children = (
+				DC3438271CA78E31007EFEE8 /* BilinearArray.swift */,
+				DC3438421CA78E31007EFEE8 /* FluctuatingNoise1D.swift */,
+				DC34386E1CA78E31007EFEE8 /* LinearArray.swift */,
+				DC34386F1CA78E31007EFEE8 /* LinearInterpolation.swift */,
+				DC3438711CA78E31007EFEE8 /* NoiseArray1D.swift */,
+				DC3438721CA78E31007EFEE8 /* NoiseArray2D.swift */,
+				DC3438731CA78E31007EFEE8 /* NoiseArray3D.swift */,
+				DC3438741CA78E31007EFEE8 /* NoiseFadeAnimation.swift */,
+				DC3438751CA78E31007EFEE8 /* NoiseTexture2D.swift */,
+				DC3438971CA78E31007EFEE8 /* TrilinearArray.swift */,
+			);
+			name = Noise;
+			sourceTree = "<group>";
+		};
+		DCC9B6A61CA83D9200743E2C /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C9A791CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.fsh */,
+				DC5C9A7A1CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.vsh */,
+				DC5C9A7B1CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.fsh */,
+				DC5C9A7C1CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.vsh */,
+				DC5C9A7D1CAC1BB1002AAAF8 /* PerlinNoiseShader.fsh */,
+				DC5C9A7E1CAC1BB1002AAAF8 /* PerlinNoiseShader.vsh */,
+				DC5C9A7F1CAC1BB1002AAAF8 /* PerlinSinNoiseShader.fsh */,
+				DC5C9A801CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh */,
+			);
+			name = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,7 +419,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC34381C1CA78D78007EFEE8 /* OmniSwiftX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +479,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC5C9A881CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh in Resources */,
+				DC5C9A831CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.fsh in Resources */,
+				DC5C9A851CAC1BB1002AAAF8 /* PerlinNoiseShader.fsh in Resources */,
+				DC5C9A821CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.vsh in Resources */,
+				DC5C9A871CAC1BB1002AAAF8 /* PerlinSinNoiseShader.fsh in Resources */,
+				DC5C9A811CAC1BB1002AAAF8 /* PerlinAbsNoiseShader.fsh in Resources */,
+				DC5C9A841CAC1BB1002AAAF8 /* PerlinFractalNoiseShader.vsh in Resources */,
+				DC5C9A861CAC1BB1002AAAF8 /* PerlinNoiseShader.vsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +497,103 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC3438F21CA78E31007EFEE8 /* MultiTexturedQuad.swift in Sources */,
+				DC3438FE1CA78E31007EFEE8 /* ParticleEmitterBackgroundQueue.swift in Sources */,
+				DC3438FD1CA78E31007EFEE8 /* NSURL+Convenience.swift in Sources */,
+				DC3438A51CA78E31007EFEE8 /* AngleDelta.swift in Sources */,
+				DC3438F11CA78E31007EFEE8 /* LinearInterpolation.swift in Sources */,
+				DC3438DE1CA78E31007EFEE8 /* GLSNoiseSprite.swift in Sources */,
+				DC3439261CA78E31007EFEE8 /* XMLFileHandler.swift in Sources */,
+				DC3438FB1CA78E31007EFEE8 /* NSOperation+Convenience.swift in Sources */,
+				DC3438D31CA78E31007EFEE8 /* GLSFireSprite.swift in Sources */,
+				DC3438F61CA78E31007EFEE8 /* NoiseFadeAnimation.swift in Sources */,
+				DC3438E41CA78E31007EFEE8 /* GLSSprite.swift in Sources */,
+				DC34390B1CA78E31007EFEE8 /* SCVector3+Color.swift in Sources */,
+				DC3439021CA78E31007EFEE8 /* RotationDelta.swift in Sources */,
+				DC3438D21CA78E31007EFEE8 /* GLSEmitterReference.swift in Sources */,
+				DC34390E1CA78E31007EFEE8 /* SCVector4+Color.swift in Sources */,
+				DC3438CD1CA78E31007EFEE8 /* GLSAlphaHoleSprite.swift in Sources */,
+				DC3438AC1CA78E31007EFEE8 /* BoolList2D.swift in Sources */,
+				DC3439151CA78E31007EFEE8 /* String+Convenience.swift in Sources */,
+				DC3438E11CA78E31007EFEE8 /* GLSRadialGradientSprite.swift in Sources */,
+				DC3438FA1CA78E31007EFEE8 /* NSObject+Convenience.swift in Sources */,
+				DC34390A1CA78E31007EFEE8 /* SCVector3.swift in Sources */,
+				DC3439091CA78E31007EFEE8 /* SCMatrix4Array.swift in Sources */,
+				DC3439101CA78E31007EFEE8 /* ShaderHelper.swift in Sources */,
+				DC3438CE1CA78E31007EFEE8 /* GLSAnimator.swift in Sources */,
+				DC34390F1CA78E31007EFEE8 /* Set+Convenience.swift in Sources */,
+				DC3438D41CA78E31007EFEE8 /* GLSFrameBuffer.swift in Sources */,
+				DC3438AB1CA78E31007EFEE8 /* BoolList.swift in Sources */,
+				DC3438E01CA78E31007EFEE8 /* GLSPerlinNoiseSprite.swift in Sources */,
+				DC3438CA1CA78E31007EFEE8 /* GLGradientTexture2D.swift in Sources */,
+				DC3438D71CA78E31007EFEE8 /* GLSFrameSprite.swift in Sources */,
+				DC3438D91CA78E31007EFEE8 /* GLSGroupNode.swift in Sources */,
+				DC3439071CA78E31007EFEE8 /* SCMatrix4.swift in Sources */,
+				DC3438E51CA78E31007EFEE8 /* GLSTileSprite.swift in Sources */,
+				DC34390C1CA78E31007EFEE8 /* SCVector3Array.swift in Sources */,
+				DC3438FC1CA78E31007EFEE8 /* NSScanner+Swift.swift in Sources */,
+				DC3438D61CA78E31007EFEE8 /* GLSFramebufferStack.swift in Sources */,
+				DC3438B31CA78E31007EFEE8 /* CGFloat+Convenience.swift in Sources */,
+				DC3438AF1CA78E31007EFEE8 /* CCSound.swift in Sources */,
+				DC3438F71CA78E31007EFEE8 /* NoiseTexture2D.swift in Sources */,
+				DC3438F01CA78E31007EFEE8 /* LinearArray.swift in Sources */,
+				DC3439131CA78E31007EFEE8 /* Stack.swift in Sources */,
+				DC3439111CA78E31007EFEE8 /* SimpleStringParser.swift in Sources */,
+				DC3439061CA78E31007EFEE8 /* SCMatrix3Array.swift in Sources */,
+				DC3438B41CA78E31007EFEE8 /* CGPoint+Math.swift in Sources */,
+				DC3438EC1CA78E31007EFEE8 /* Int+Convenience.swift in Sources */,
+				DC3438E81CA78E31007EFEE8 /* GLSUniversalTextureWrangler.swift in Sources */,
+				DC3438F91CA78E31007EFEE8 /* NSNotificationCenter+Convenience.swift in Sources */,
+				DC3439121CA78E31007EFEE8 /* SmoothingFunctions.swift in Sources */,
+				DC3439241CA78E31007EFEE8 /* Updater.swift in Sources */,
+				DC3438E21CA78E31007EFEE8 /* GLSRecursivePropertyNode.swift in Sources */,
+				DC3439051CA78E31007EFEE8 /* SCCloudSingleton+Convenience.swift in Sources */,
+				DC3438ED1CA78E31007EFEE8 /* IntPoint.swift in Sources */,
+				DC3438F81CA78E31007EFEE8 /* NSFileManager+Convenience.swift in Sources */,
+				DC3439231CA78E31007EFEE8 /* UniversalSaverBase.swift in Sources */,
+				DC3438C81CA78E31007EFEE8 /* GLAttributeBridger.swift in Sources */,
+				DC3439141CA78E31007EFEE8 /* StaticRenderer.swift in Sources */,
+				DC3439041CA78E31007EFEE8 /* SCCloudSingleton.swift in Sources */,
+				DC3438C41CA78E31007EFEE8 /* FluctuatingNoise1D.swift in Sources */,
+				DC3438B11CA78E31007EFEE8 /* CCTexture.swift in Sources */,
+				DC8A94661CA977AC00049118 /* NSRegularExpression+Convenience.swift in Sources */,
+				DC3438DB1CA78E31007EFEE8 /* GLSNode+Animation.swift in Sources */,
+				DC3439171CA78E31007EFEE8 /* TimeTracker.swift in Sources */,
+				DC3438E91CA78E31007EFEE8 /* HasComponentsProtocol.swift in Sources */,
+				DC3439001CA78E31007EFEE8 /* Primitives+Convenience.swift in Sources */,
+				DC3439081CA78E31007EFEE8 /* SCMatrix4+Transformation.swift in Sources */,
+				DC3438F51CA78E31007EFEE8 /* NoiseArray3D.swift in Sources */,
+				DC3438CF1CA78E31007EFEE8 /* GLSBlurSprite.swift in Sources */,
+				DC3438B21CA78E31007EFEE8 /* CCTextureOrganizer.swift in Sources */,
+				DC3438AA1CA78E31007EFEE8 /* Bool+Convenience.swift in Sources */,
+				DC3438CC1CA78E31007EFEE8 /* GLProgramDictionary.swift in Sources */,
+				DC3439011CA78E31007EFEE8 /* RecursiveRenderer.swift in Sources */,
+				DC3438F41CA78E31007EFEE8 /* NoiseArray2D.swift in Sources */,
+				DC3438B61CA78E31007EFEE8 /* CGRect+Math.swift in Sources */,
+				DC3438C31CA78E31007EFEE8 /* Direction2D.swift in Sources */,
+				DC3438D11CA78E31007EFEE8 /* GLSDoubleSprite.swift in Sources */,
+				DC3438BA1CA78E31007EFEE8 /* CombineIteration.swift in Sources */,
+				DC3438A91CA78E31007EFEE8 /* BilinearArray.swift in Sources */,
+				DC3438D81CA78E31007EFEE8 /* GLSGradientSprite.swift in Sources */,
+				DC3439191CA78E31007EFEE8 /* TrilinearArray.swift in Sources */,
+				DC3438B81CA78E31007EFEE8 /* ColorGradient1D.swift in Sources */,
+				DC3438DC1CA78E31007EFEE8 /* GLSNode+UniversalRendering.swift in Sources */,
+				DC3438A61CA78E31007EFEE8 /* AnimationDelta.swift in Sources */,
+				DC3438B71CA78E31007EFEE8 /* CGSize+Math.swift in Sources */,
+				DC34390D1CA78E31007EFEE8 /* SCVector4.swift in Sources */,
+				DC3439161CA78E31007EFEE8 /* TexturedQuad.swift in Sources */,
+				DC3438DA1CA78E31007EFEE8 /* GLSNode.swift in Sources */,
+				DC3438F31CA78E31007EFEE8 /* NoiseArray1D.swift in Sources */,
+				DC3438B01CA78E31007EFEE8 /* CCSoundPlayer.swift in Sources */,
+				DC3438DF1CA78E31007EFEE8 /* GLSParticleEmitter.swift in Sources */,
+				DC3438B51CA78E31007EFEE8 /* CGRect+Enumeration.swift in Sources */,
+				DC8A94681CA9787C00049118 /* String+Parsing.swift in Sources */,
+				DC3438A71CA78E31007EFEE8 /* Array+Convenience.swift in Sources */,
+				DC3438E31CA78E31007EFEE8 /* GLSRepeatedNoiseSprite.swift in Sources */,
+				DC3438D01CA78E31007EFEE8 /* GLSCamera.swift in Sources */,
+				DC3438EA1CA78E31007EFEE8 /* HealthBarSprite.swift in Sources */,
+				DC3438DD1CA78E31007EFEE8 /* GLSNodeReference.swift in Sources */,
+				DC3438EE1CA78E31007EFEE8 /* IntPoint+Operations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +691,7 @@
 		DC3438211CA78D78007EFEE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -239,12 +704,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "Corona-Corporation.OmniSwiftX";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		DC3438221CA78D78007EFEE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -279,6 +746,7 @@
 				DC3438221CA78D78007EFEE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
