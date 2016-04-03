@@ -74,6 +74,7 @@ public class GLSFrameBuffer: GLSNode {
         glBindRenderbuffer(GLenum(GL_RENDERBUFFER), self.renderBuffer)
         glRenderbufferStorage(GLenum(GL_RENDERBUFFER), GLenum(GL_RGBA8), width, height)
         glFramebufferRenderbuffer(GLenum(GL_FRAMEBUFFER), GLenum(GL_COLOR_ATTACHMENT1), GLenum(GL_RENDERBUFFER), self.renderBuffer)
+        
         let status = glCheckFramebufferStatus(GLenum(GL_FRAMEBUFFER))
         if (status != GLenum(GL_FRAMEBUFFER_COMPLETE)) {
             print("Framebuffer binding failed.")

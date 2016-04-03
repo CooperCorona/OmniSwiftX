@@ -12,6 +12,7 @@ public class GLSFramebufferStack: NSObject {
    
     private let initialBuffer:NSOpenGLView?
     private var buffers:[GLuint] = []
+    private var renderBuffers:[GLuint] = []
     public let internalContext:NSOpenGLContext?
     
     public init(initialBuffer:NSOpenGLView?) {
@@ -27,10 +28,6 @@ public class GLSFramebufferStack: NSObject {
     
     
     public func pushFramebuffer(buffer:GLuint) -> Bool {
-        self.internalContext?.makeCurrentContext()
-        if let buffer = self.initialBuffer {
-            glViewport(0, 0, GLsizei(buffer.frame.width), GLsizei(buffer.frame.height))
-        }
         
         glBindFramebuffer(GLenum(GL_FRAMEBUFFER), buffer)
         self.buffers.append(buffer)
@@ -39,9 +36,18 @@ public class GLSFramebufferStack: NSObject {
     }//push a framebuffer
     
     public func pushGLSFramebuffer(buffer:GLSFrameBuffer) -> Bool {
+        self.internalContext?.makeCurrentContext()
+        if let buffer = self.initialBuffer {
+            glViewport(0, 0, GLsizei(buffer.frame.width), GLsizei(buffer.frame.height))
+        }
         
-        return self.pushFramebuffer(buffer.framebuffer)
+        glBindFramebuffer(GLenum(GL_FRAMEBUFFER), buffer.framebuffer)
+        glBindRenderbuffer(GLenum(GL_RENDERBUFFER), buffer.renderBuffer)
         
+        self.buffers.append(buffer.framebuffer)
+        self.renderBuffers.append(buffer.renderBuffer)
+        
+        return true
     }//push a framebuffer
     
     public func popFramebuffer() -> Bool {
@@ -50,11 +56,15 @@ public class GLSFramebufferStack: NSObject {
             return false
         }//can't pop initial framebuffer
         
+        //renderBuffers is guarunteed to be the same length as buffers.
         self.buffers.removeLast()
+        self.renderBuffers.removeLast()
         
-        if let topBuffer = self.buffers.last {
+        if let topBuffer = self.buffers.last, renderBuffer = self.renderBuffers.last {
             glBindFramebuffer(GLenum(topBuffer), topBuffer)
+            glBindRenderbuffer(GLenum(GL_RENDERBUFFER), renderBuffer)
         } else {
+            glFlush()
             self.initialBuffer?.openGLContext?.makeCurrentContext()
         }
         
