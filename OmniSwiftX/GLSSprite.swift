@@ -63,7 +63,7 @@ public class GLSSprite: GLSNode {
     override public func contentSizeChanged() {
         let sizeAsPoint = self.contentSize.getNSPoint()
         for iii in 0..<TexturedQuad.verticesPerQuad {
-            vertices[iii].position = (TexturedQuad.pointForIndex(iii) * sizeAsPoint).getGLTuple()
+            self.vertices[iii].position = (TexturedQuad.pointForIndex(iii) * sizeAsPoint).getGLTuple()
         }
         self.verticesAreDirty = true
     }

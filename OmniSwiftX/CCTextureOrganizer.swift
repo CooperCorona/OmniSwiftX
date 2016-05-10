@@ -215,7 +215,8 @@ public class CCTextureOrganizer: NSObject, XMLFileHandlerDelegate {
     }//create texture
     
     public class func createPDFTexture(file:String, size:NSSize) -> GLKTextureInfo {
-        let data = NSData(contentsOfFile: NSBundle.mainBundle().pathForResource(file, ofType: "pdf")!)!
+        let image = NSImage.imageWithPDFFile(NSBundle.mainBundle().pathForResource(file, ofType: "pdf")!, size: size)!
+        let data = image.TIFFRepresentation!
         return try! GLKTextureLoader.textureWithContentsOfData(data, options: [GLKTextureLoaderOriginBottomLeft:true])
     }//create pdf texture with size
     

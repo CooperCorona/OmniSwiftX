@@ -114,6 +114,7 @@ extension String {
     public func removeAllWhiteSpace() -> String {
         return self.componentsSeparatedByCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).filter() { $0 != "" } .reduce("") { $0 + $1 }
     }
+
 }
 
 

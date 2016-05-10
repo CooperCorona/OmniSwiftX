@@ -17,6 +17,14 @@ extension Set {
         }
     }
     
+    public func toArray() -> [Element] {
+        var array:[Element] = []
+        for value in self {
+            array.append(value)
+        }
+        return array
+    }
+    
     public mutating func removeRandomObject() -> Element? {
         guard let element = self.randomElement() else {
             return nil

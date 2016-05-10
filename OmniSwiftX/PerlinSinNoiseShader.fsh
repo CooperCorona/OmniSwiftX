@@ -16,6 +16,7 @@ uniform vec3 u_Offset;
 uniform float u_NoiseDivisor;
 uniform float u_Alpha;
 uniform ivec3 u_Period;
+uniform float u_NoiseAngle;
 
 in vec2 v_Texture;
 in highp vec3 v_NoiseTexture;
@@ -225,7 +226,10 @@ void main(void) {
     
     vec4 texColor = texture(u_TextureInfo, v_Texture);
     
-    vec3 noiseTex = v_NoiseTexture + u_Offset;
+    float c = cos(u_NoiseAngle);
+    float s = sin(u_NoiseAngle);
+    vec3 nt = vec3(v_NoiseTexture.x * c + v_NoiseTexture.y * s, -v_NoiseTexture.x * s + v_NoiseTexture.y * c, v_NoiseTexture.z);
+    vec3 noiseTex = nt/*v_NoiseTexture*/ + u_Offset;
     highp float noise = abs(fractalNoiseAt(noiseTex) / u_NoiseDivisor);
     noise = 0.5 - cos(3.14159265 * (noiseTex.x + noise)) / 2.0;
     vec4 graColor = texture(u_GradientInfo, vec2(noise, 0.0));

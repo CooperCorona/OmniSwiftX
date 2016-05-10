@@ -112,6 +112,8 @@
 		DC5C9A881CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = DC5C9A801CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh */; };
 		DC8A94661CA977AC00049118 /* NSRegularExpression+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A94651CA977AC00049118 /* NSRegularExpression+Convenience.swift */; };
 		DC8A94681CA9787C00049118 /* String+Parsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC8A94671CA9787C00049118 /* String+Parsing.swift */; };
+		DCDCC04F1CB9D8C8008F6012 /* NSColor+Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDCC04E1CB9D8C8008F6012 /* NSColor+Math.swift */; };
+		DCFA23471CDC403300669667 /* NSImage+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFA23461CDC403300669667 /* NSImage+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -222,6 +224,8 @@
 		DC5C9A801CAC1BB1002AAAF8 /* PerlinSinNoiseShader.vsh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = PerlinSinNoiseShader.vsh; sourceTree = "<group>"; };
 		DC8A94651CA977AC00049118 /* NSRegularExpression+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSRegularExpression+Convenience.swift"; sourceTree = "<group>"; };
 		DC8A94671CA9787C00049118 /* String+Parsing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Parsing.swift"; sourceTree = "<group>"; };
+		DCDCC04E1CB9D8C8008F6012 /* NSColor+Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSColor+Math.swift"; sourceTree = "<group>"; };
+		DCFA23461CDC403300669667 /* NSImage+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSImage+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,7 +298,9 @@
 				DC3438351CA78E31007EFEE8 /* CGSize+Math.swift */,
 				DC3438381CA78E31007EFEE8 /* CombineIteration.swift */,
 				DC34386A1CA78E31007EFEE8 /* Int+Convenience.swift */,
+				DCDCC04E1CB9D8C8008F6012 /* NSColor+Math.swift */,
 				DC3438761CA78E31007EFEE8 /* NSFileManager+Convenience.swift */,
+				DCFA23461CDC403300669667 /* NSImage+Convenience.swift */,
 				DC3438771CA78E31007EFEE8 /* NSNotificationCenter+Convenience.swift */,
 				DC3438781CA78E31007EFEE8 /* NSObject+Convenience.swift */,
 				DC3438791CA78E31007EFEE8 /* NSOperation+Convenience.swift */,
@@ -506,11 +512,13 @@
 				DC3439261CA78E31007EFEE8 /* XMLFileHandler.swift in Sources */,
 				DC3438FB1CA78E31007EFEE8 /* NSOperation+Convenience.swift in Sources */,
 				DC3438D31CA78E31007EFEE8 /* GLSFireSprite.swift in Sources */,
+				DCDCC04F1CB9D8C8008F6012 /* NSColor+Math.swift in Sources */,
 				DC3438F61CA78E31007EFEE8 /* NoiseFadeAnimation.swift in Sources */,
 				DC3438E41CA78E31007EFEE8 /* GLSSprite.swift in Sources */,
 				DC34390B1CA78E31007EFEE8 /* SCVector3+Color.swift in Sources */,
 				DC3439021CA78E31007EFEE8 /* RotationDelta.swift in Sources */,
 				DC3438D21CA78E31007EFEE8 /* GLSEmitterReference.swift in Sources */,
+				DCFA23471CDC403300669667 /* NSImage+Convenience.swift in Sources */,
 				DC34390E1CA78E31007EFEE8 /* SCVector4+Color.swift in Sources */,
 				DC3438CD1CA78E31007EFEE8 /* GLSAlphaHoleSprite.swift in Sources */,
 				DC3438AC1CA78E31007EFEE8 /* BoolList2D.swift in Sources */,

@@ -136,11 +136,19 @@ public class ColorGradient1D: NSObject {
         self.init(colorsAndWeights: colorsAndWeights, smoothed: smoothed)
     }//initialize
     
+    public func blendColor(color:SCVector4) -> ColorGradient1D {
+        var anchors:ColorArray = []
+        for anchor in self.anchors {
+            let blendedColor = linearlyInterpolate(color.a, left: anchor.color.xyz, right: color.xyz)
+            anchors.append((color: SCVector4(vector3: blendedColor, wValue: anchor.color.a), weight: anchor.weight))
+        }
+        return ColorGradient1D(colorsAndWeights: anchors, smoothed: self.isSmoothed)
+    }
+    
     // MARK: - Logic
     
     public subscript(percent:CGFloat) -> SCVector4 {
         let index = Int(percent * CGFloat(self.size - 1))
-        
         let r = self.colorArray[index * 4]
         let g = self.colorArray[index * 4 + 1]
         let b = self.colorArray[index * 4 + 2]
@@ -150,7 +158,7 @@ public class ColorGradient1D: NSObject {
     
     // MARK: - Static Gradients
     
-    public static let grayscaleGradient:ColorGradient1D = ColorGradient1D(colors: [SCVector4.blackColor, SCVector4.whiteColor])
+    public static let grayscaleGradient:ColorGradient1D = ColorGradient1D(colors: [SCVector4.blackColor, SCVector4.whiteColor], smoothed: false)
     
     public static let rainbowGradient = ColorGradient1D(colors: SCVector4.rainbowColors)
     

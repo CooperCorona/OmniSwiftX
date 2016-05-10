@@ -13,10 +13,10 @@ public struct SCVector4: CustomStringConvertible {
     
     // MARK: - Properties
     
-    public let x:CGFloat// = 0.0
-    public let y:CGFloat// = 0.0
-    public let z:CGFloat// = 0.0
-    public let w:CGFloat// = 1.0
+    public var x:CGFloat// = 0.0
+    public var y:CGFloat// = 0.0
+    public var z:CGFloat// = 0.0
+    public var w:CGFloat// = 1.0
     
     public var r:CGFloat {
         

@@ -132,7 +132,7 @@ public class GLSPerlinNoiseSprite: GLSSprite, DoubleBuffered {
             case .Abs:
                 self.noiseProgram = ShaderHelper.programDictionaryForString("Perlin Abs Noise Shader")!
             case .Sin:
-                self.noiseProgram = ShaderHelper.programDictionaryForString("Perlin Sin Shader")!
+                self.noiseProgram = ShaderHelper.programDictionaryForString("Perlin Sin Noise Shader")!
             }
  
 //            self.noiseProgram = PerlinNoiseProgram(type: self.noiseType)
@@ -294,11 +294,6 @@ public class GLSPerlinNoiseSprite: GLSSprite, DoubleBuffered {
             }
         }
     }//update
-    
-    /*public override func render(model: SCMatrix4) {
-        SCVector4.blueColor.bindGLClearColor()
-        self.renderToTexture()
-    }*/
     
     ///Render noise to background texture (*buffer*).
     public func renderToTexture() {

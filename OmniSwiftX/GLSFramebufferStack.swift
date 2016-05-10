@@ -18,11 +18,12 @@ public class GLSFramebufferStack: NSObject {
     public init(initialBuffer:NSOpenGLView?) {
         
         self.initialBuffer = initialBuffer
-        if let pixelFormat = self.initialBuffer?.pixelFormat {
+        /*if let pixelFormat = self.initialBuffer?.pixelFormat {
             self.internalContext = NSOpenGLContext(format: pixelFormat, shareContext: self.initialBuffer?.openGLContext)
         } else {
             self.internalContext = nil
-        }
+        }*/
+        self.internalContext = GLSFrameBuffer.globalContext
         super.init()
     }//initialize
     
@@ -37,9 +38,9 @@ public class GLSFramebufferStack: NSObject {
     
     public func pushGLSFramebuffer(buffer:GLSFrameBuffer) -> Bool {
         self.internalContext?.makeCurrentContext()
-        if let buffer = self.initialBuffer {
+        /*if let buffer = self.initialBuffer {
             glViewport(0, 0, GLsizei(buffer.frame.width), GLsizei(buffer.frame.height))
-        }
+        }*/
         
         glBindFramebuffer(GLenum(GL_FRAMEBUFFER), buffer.framebuffer)
         glBindRenderbuffer(GLenum(GL_RENDERBUFFER), buffer.renderBuffer)

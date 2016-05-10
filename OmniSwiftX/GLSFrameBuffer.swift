@@ -39,6 +39,14 @@ public class GLSFrameBuffer: GLSNode {
     */
     public var renderChildren = true
     
+    public static let globalContext = NSOpenGLContext(format: NSOpenGLPixelFormat(attributes: [
+        UInt32(NSOpenGLPFAAccelerated),
+        UInt32(NSOpenGLPFAColorSize), UInt32(32),
+        UInt32(NSOpenGLPFAOpenGLProfile),
+        UInt32(NSOpenGLProfileVersion3_2Core),
+        UInt32(0)
+    ])!, shareContext: nil)!
+    
     /**
     Texture Parameters must be *GL_LINEAR* and *GL_CLAMP_TO_EDGE*
     for non-power of 2 sizes to work
@@ -49,6 +57,7 @@ public class GLSFrameBuffer: GLSNode {
     
     ///Initializes a GLSFrameBuffer with a given size and retina scale.
     public init(size:NSSize, scale:CGFloat) {
+        GLSFrameBuffer.globalContext.makeCurrentContext()
         self.size = size
         self.internalScale = scale
         self.internalSize = self.size * self.internalScale
@@ -139,7 +148,7 @@ public class GLSFrameBuffer: GLSNode {
     
     
     public func getImage() -> NSImage {
-        
+        GLSFrameBuffer.globalContext.makeCurrentContext()
         glBindFramebuffer(GLenum(GL_FRAMEBUFFER), self.framebufferName)
         glBindRenderbuffer(GLenum(GL_RENDERBUFFER), self.renderBuffer)
         glReadBuffer(GLenum(GL_COLOR_ATTACHMENT0))
@@ -176,9 +185,7 @@ public class GLSFrameBuffer: GLSNode {
         CGContextRestoreGState(context)
         let im = NSImage(CGImage: cgIm2!, size: self.contentSize)
         return im
-        
-        let bitmapIm = NSBitmapImageRep(CGImage: cgIm2!)
-        
+//        let bitmapIm = NSBitmapImageRep(CGImage: cgIm2!)
     }//get framebuffer as image
 
     
@@ -256,29 +263,8 @@ public class GLSFrameBuffer: GLSNode {
     }
 }
 
-//Convenience
-public extension GLSFrameBuffer {
-    /*
-    public var shadeColor:SCVector3 {
-    get { return self.sprite.shadeColor }
-    set { self.sprite.shadeColor = newValue }
-    }
-    
-    public var tintColor:SCVector3 {
-    get { return self.sprite.tintColor }
-    set { self.sprite.tintColor = newValue }
-    }
-    
-    public var tintIntensity:SCVector3 {
-    get { return self.sprite.tintIntensity }
-    set { self.sprite.tintIntensity = newValue }
-    }
-    */
-}//Access 'sprite's properties conveniently
-
 //Getters / public class Functions
 public extension GLSFrameBuffer {
-    
     
     public class func isPowerOf2(value:Int) -> Bool {
         return (value & (value - 1)) == 0

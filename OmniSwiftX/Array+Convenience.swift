@@ -65,6 +65,15 @@ extension Array {
         return self[index]
     }
     
+    public func findObject(predicate:(Element) -> Bool) -> Element? {
+        for object in self {
+            if predicate(object) {
+                return object
+            }
+        }
+        return nil
+    }
+    
     /**
     Adds enough values to the end the array so that it has a specified length.
     

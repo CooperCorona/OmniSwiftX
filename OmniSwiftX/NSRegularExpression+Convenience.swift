@@ -44,7 +44,7 @@ extension NSRegularExpression {
 extension String {
     
     public func matchesRegex(regex:String) -> Bool {
-        guard let regExpress = NSRegularExpression(regex: regex) else {
+        guard let regExpress = try? NSRegularExpression(pattern: regex, options: []) else {
             return false
         }
         return regExpress.matchesInString(self).count > 0
