@@ -165,6 +165,21 @@ public class GLSFrameBuffer: GLSNode {
         }
         
         glReadPixels(0, 0, GLsizei(width), GLsizei(height), GLenum(GL_RGBA), GLenum(GL_UNSIGNED_BYTE), &buffer)
+        //OpenGL coordinates are opposite of UI / NS coordinates,
+        //so the image must be flipped vertically.
+        //
+        //We only iterate through half the height, because otherwise,
+        //we'll unflip the top pixels after they've already been flipped.
+        for j in 0..<(height / 2) {
+            for i in 0..<width {
+                let pos = (j * width + i) * 4
+                let topPos = ((height - j - 1) * width + i) * 4
+                //Swap each RGBA component.
+                for k in 0..<3 {
+                    swap(&buffer[pos + k], &buffer[topPos + k])
+                }
+            }
+        }
         let dProvider = CGDataProviderCreateWithData(nil, buffer, Int(dataLength), nil)
         let bitsPerComponent = 8
         let bitsPerPixel = bitsPerComponent * 4
